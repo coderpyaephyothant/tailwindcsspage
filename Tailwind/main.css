@@ -1,3 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.navBar {
+    @apply flex items-center justify-between  p-2 mt-3 text-green-900 w-full z-40 top-0 fixed
+}
+
+.navLink{
+    @apply text-xl font-bold m-1 px-2.5 py-2 rounded-lg hover:bg-green-600 hover:text-white hover:bg-opacity-60 transition-all duration-500
+}
+.image_section{
+    @apply w-full h-screen
+}
+.car_image{
+    @apply w-full h-screen object-cover
+}
+.details{
+    @apply absolute top-[20%] left-[45%] text-center cursor-pointer 
+}
+.model{
+    @apply text-xl font-bold
+}
+.para{
+    @apply tracking-wide
+}
+
+.btns{
+    @apply absolute top-[80%] left-[43%] 
+}
+
+.bty{
+    @apply text-sm px-6 py-2 bg-slate-700 rounded-xl m-2 hover:bg-opacity-10 font-bold
+}
+.bty1{
+    @apply bg-white text-slate-900
+}
+.vg{
+    @apply absolute top-[90%] w-full h-20 block animate-bounce
+}
